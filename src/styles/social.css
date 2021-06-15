@@ -1,0 +1,83 @@
+aside {
+    width: 7%;
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+div.socials {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.socials_icon {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+div.socials_icon i {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+div.socials_icon i:nth-child(1) {
+    margin: 20px 0 10px 0;
+}
+
+div.socials_icon i:nth-child(1):hover {
+    color: #3b5998;
+}
+
+div.socials_icon i:nth-child(2):hover {
+    color: #1DA1F2;
+}
+
+div.socials_icon i:nth-child(3):hover {
+    color: #E1306C;
+}
+
+div.scroll {
+    flex-basis: 30%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+}
+
+div.scroll .scroll_drag {
+    background-color: crimson;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.scroll .scroll_drag i {
+    font-size: 2rem;
+}
+
+div.scroll .scroll_drag.rotate i {
+    transform: rotate(180deg);
+}
+
+
+div.scroll .scroll_text {
+    font-size: 2rem;
+    transform: rotate(90deg);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.scroll .scroll_text p {
+    font-size: 1.2rem;
+}

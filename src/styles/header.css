@@ -1,0 +1,50 @@
+div.navBar {
+    display: flex;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(4.0px);
+    -webkit-backdrop-filter: blur(4.0px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    height: 100%;
+}
+
+div.navBar .logo {
+    flex-basis: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+div.navBar .logo img {
+    width: 70%;
+    padding: 5%;
+}
+
+div.navBar .main {
+    flex-grow: 1;
+}
+
+nav.main ul {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav.main ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+nav.main ul li a:hover {
+    color: crimson;
+}
+
+nav.main ul li a.active {
+    border-bottom: 2px solid crimson;
+}

@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./styles/App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./layouts/Header";
+import Social from "./layouts/Social";
+import Navigation from "./layouts/Navigation";
+import ArticleArea from "./layouts/ArticleArea";
+import Footer from "./layouts/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {};
+  render() {
+    return (
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="App">
+          <div className="bg_pic">
+            <header>
+              <Header />
+            </header>
+            <main>
+              <aside>
+                <Social />
+              </aside>
+              <section>
+                <Navigation />
+              </section>
+              <article>
+                <ArticleArea />
+              </article>
+            </main>
+            <footer>
+              <Footer />
+            </footer>
+          </div>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

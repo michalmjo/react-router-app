@@ -1,0 +1,43 @@
+div.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 15, 27, 0.5);
+  background: linear-gradient(321deg, rgba(0, 15, 27, 1) 0%, rgba(37, 37, 37, 1) 100%);
+}
+
+div.bg_pic {
+  position: absolute;
+  width: 85vw;
+  height: 85vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+div.bg_pic::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  opacity: 0.075;
+  z-index: -1;
+}
+
+header {
+  height: 10%;
+}
+
+main {
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
